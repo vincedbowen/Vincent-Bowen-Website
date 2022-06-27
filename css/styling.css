@@ -52,9 +52,22 @@ body {
   text-decoration: underline;
 }
 
-.navbar-brand a:hover{
-  text-decoration: dashed;
-}
 .navbar-nav a:hover{
+  text-decoration: underline;
+}
+
+.colophon-content a{
+  color: #B91372;
+  text-decoration: none;
+}
+.colophon-content a:hover{
+  text-decoration: underline;
+}
+
+.index-content a{
+  color: #B91372;
+  text-decoration: none;
+}
+.index-content a:hover{
   text-decoration: underline;
 }
