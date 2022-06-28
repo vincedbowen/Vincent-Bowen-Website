@@ -56,18 +56,11 @@ body {
   text-decoration: underline;
 }
 
-.colophon-content a{
+.main-content a{
   color: #B91372;
   text-decoration: none;
 }
-.colophon-content a:hover{
+.main-content a:hover{
   text-decoration: underline;
 }
 
-.index-content a{
-  color: #B91372;
-  text-decoration: none;
-}
-.index-content a:hover{
-  text-decoration: underline;
-}
