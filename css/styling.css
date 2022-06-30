@@ -5,7 +5,7 @@ html {
 }
 body {
   padding-bottom: 220px; /* Margin bottom by footer height */
-  background-color: #FEF9FF;
+  /* background-color: #f8f8f8; */
   
 }
 .main{
@@ -64,3 +64,14 @@ body {
   text-decoration: underline;
 }
 
+.resume-header{
+  text-decoration: underline;
+}
+.button-info a{
+  color: white;
+}
+
+.button-info a:hover{
+  background-color: #B91372;
+  color: #292b2c;
+}
