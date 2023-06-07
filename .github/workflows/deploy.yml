@@ -1,6 +1,7 @@
 name: deploy
 on:
   push:
+    branch: main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -15,5 +16,5 @@ jobs:
       #   run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy with rsync
-        run: rsync -e "/usr/bin/ssh"  --bwlimit=2000 -av ~/vincentbowen/personalProjets/Vincent-Bowen-Website ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:vincentbowen.com
+        run: rsync -e "/usr/bin/ssh"  --bwlimit=2000 -av ~/vincentbowen/personalProjets/Vincent-Bowen-Website ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/~/vincentbowen.com
 #testS
