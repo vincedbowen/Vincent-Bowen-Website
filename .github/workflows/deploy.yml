@@ -10,10 +10,10 @@ jobs:
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: uneccesary
+          known_hosts: ${{ secrets.SSH_KNOWN_HOSTS }}
 
-      - name: Adding Known Hosts
-        run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+      # - name: Adding Known Hosts
+      #   run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
 
       - name: Deploy with rsync
         run: rsync -e "/usr/bin/ssh" -av ~/vincentbowen/personalProjets/Vincent-Bowen-Website ${{ secrets.SSH_USERNAME }}@${{ secrets.SSH_HOST }}:/~/vincentbowen.com
